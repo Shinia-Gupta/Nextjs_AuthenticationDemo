@@ -19,7 +19,7 @@ export const Navigation = () => {
             </h1>
           </div>
           <div className="flex items-center gap-4">
-            <SignedOut>
+            <SignedOut>  {/* Used to conditionally render the Sign in and Sign up button links */}
               <SignInButton>
                 <button className="px-2 py-1 text-sm border border-neutral-300 dark:border-neutral-600 dark:text-neutral-200 dark:hover:bg-neutral-700">
                   Sign In
@@ -31,7 +31,7 @@ export const Navigation = () => {
                 </button>
               </SignUpButton>
             </SignedOut>
-            <SignedIn>
+            <SignedIn>   {/* Used to conditionally render the Profile link */}
               <Link href="/user-profile">Profile</Link>
               <SignOutButton />
               {/* <UserButton /> */}
